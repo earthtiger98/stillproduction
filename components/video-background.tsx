@@ -11,7 +11,7 @@ export function VideoBackground() {
         className="h-full w-full object-cover opacity-40"
       >
         <source
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ComfyUI_00002_%20%281%29-jMOCaPa7K3h7svc342b6C51gqH0RrA.mp4"
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Can_you_give_the_logo_hard_edg-kYosBWpTKHW1I2GaA9wKTycZAjoEpZ.mp4"
           type="video/mp4"
         />
       </video>
