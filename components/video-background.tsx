@@ -22,7 +22,7 @@ export function VideoBackground() {
         muted
         playsInline
         aria-label="STILL Production logo animation"
-        className="absolute inset-0 h-full w-full object-contain object-center md:hidden"
+        className="absolute inset-0 h-full w-full object-contain object-center blur-[3px] md:hidden"
       >
         <source
           src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Can_you_give_the_logo_hard_edg-kYosBWpTKHW1I2GaA9wKTycZAjoEpZ.mp4"
