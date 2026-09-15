@@ -5,6 +5,7 @@ import { About } from "@/components/about"
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
 import { VideoBackground } from "@/components/video-background"
+import { MobileStillExperience } from "@/components/mobile-still-experience"
 
 export default function Home() {
   return (
@@ -12,7 +13,10 @@ export default function Home() {
       <VideoBackground />
       <div className="relative z-10">
         <Header />
-        <Hero />
+        <MobileStillExperience />
+        <div className="hidden md:block">
+          <Hero />
+        </div>
         <Services />
         <About />
         <Contact />

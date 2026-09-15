@@ -116,6 +116,52 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+.mobile-still-scene {
+  perspective: 900px;
+}
+
+.still-wordmark {
+  display: flex;
+  transform-style: preserve-3d;
+  will-change: transform, opacity;
+  transition: transform 100ms linear, opacity 300ms ease;
+}
+
+.still-letter {
+  position: relative;
+  display: inline-block;
+  color: transparent;
+  font-family: var(--font-sans), sans-serif;
+  font-size: clamp(3.2rem, 16vw, 5.8rem);
+  font-weight: 800;
+  line-height: 0.8;
+  -webkit-text-stroke: 1px oklch(0.98 0 0 / 0.9);
+  text-shadow: 0.06em 0.06em 0 var(--accent), 0.12em 0.12em 0 oklch(0.07 0 0 / 0.85);
+  transform: translateZ(0);
+  transition: color 400ms ease, transform 450ms ease, text-shadow 450ms ease;
+}
+
+.still-letter + .still-letter {
+  margin-left: 0.04em;
+}
+
+.still-letter.is-active {
+  color: var(--foreground);
+  transform: translateZ(28px) rotateY(-8deg);
+  text-shadow: 0.08em 0.08em 0 var(--accent), 0.16em 0.16em 0 oklch(0.07 0 0 / 0.85);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .still-wordmark,
+  .still-letter {
+    transition: none;
+  }
+
+  .still-wordmark {
+    transform: none !important;
+  }
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
