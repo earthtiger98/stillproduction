@@ -2,14 +2,15 @@
 
 export function VideoBackground() {
   return (
-    <div className="fixed inset-0 z-0 overflow-hidden bg-[#42413e]">
+    <div className="fixed inset-0 z-0 overflow-hidden bg-[#42413e] flex items-center justify-center">
       <video
         autoPlay
         loop
         muted
         playsInline
         aria-label="STILL Production logo animation"
-        className="absolute inset-0 object-cover object-[50%_35%] aspect-square opacity-40 md:w-full md: h-full"
+        // Changed to object-contain for mobile, and fixed the "md: h-full" typo
+        className="absolute inset-0 w-full h-full object-contain opacity-40 md:object-cover md:object-[50%_35%]"
       >
         <source
           src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Can_you_give_the_logo_hard_edg-kYosBWpTKHW1I2GaA9wKTycZAjoEpZ.mp4"
