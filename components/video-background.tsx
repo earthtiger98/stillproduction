@@ -8,21 +8,8 @@ export function VideoBackground() {
         loop
         muted
         playsInline
-        aria-hidden="true"
-        className="absolute inset-0 h-full w-full scale-110 object-cover opacity-25 blur-2xl"
-      >
-        <source
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Can_you_give_the_logo_hard_edg-kYosBWpTKHW1I2GaA9wKTycZAjoEpZ.mp4"
-          type="video/mp4"
-        />
-      </video>
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        aria-label="K and N Production logo animation"
-        className="relative h-full w-full object-contain opacity-40 sm:object-cover"
+        aria-label="STILL Production logo animation"
+        className="absolute inset-0 h-full w-full object-cover opacity-40" 
       >
         <source
           src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Can_you_give_the_logo_hard_edg-kYosBWpTKHW1I2GaA9wKTycZAjoEpZ.mp4"
