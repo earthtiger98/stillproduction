@@ -8,21 +8,8 @@ export function VideoBackground() {
         loop
         muted
         playsInline
-        aria-label="STILL Production logo animation background"
-        className="absolute inset-0 h-full w-full object-cover object-[50%_35%] opacity-40"
-      >
-        <source
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Can_you_give_the_logo_hard_edg-kYosBWpTKHW1I2GaA9wKTycZAjoEpZ.mp4"
-          type="video/mp4"
-        />
-      </video>
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
         aria-label="STILL Production logo animation"
-        className="absolute inset-0 h-full w-full object-contain object-center blur-[3px] md:hidden"
+        className="absolute inset-0 object-cover object-[50%_35%] aspect-square opacity-40 md:w-full md: h-full"
       >
         <source
           src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Can_you_give_the_logo_hard_edg-kYosBWpTKHW1I2GaA9wKTycZAjoEpZ.mp4"
