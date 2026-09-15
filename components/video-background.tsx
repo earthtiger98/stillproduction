@@ -2,7 +2,7 @@
 
 export function VideoBackground() {
   return (
-    <div className="fixed inset-0 z-0 overflow-hidden bg-[#26251f]">
+    <div className="fixed inset-0 z-0 overflow-hidden bg-[#42413e]">
       <video
         autoPlay
         loop
