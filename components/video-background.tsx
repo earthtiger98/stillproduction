@@ -2,13 +2,13 @@
 
 export function VideoBackground() {
   return (
-    <div className="fixed inset-0 z-0 overflow-hidden">
+    <div className="fixed inset-0 z-0 overflow-hidden bg-black">
       <video
         autoPlay
         loop
         muted
         playsInline
-        className="h-full w-full object-cover opacity-40"
+        className="h-full w-full object-contain opacity-40 sm:object-cover"
       >
         <source
           src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Can_you_give_the_logo_hard_edg-kYosBWpTKHW1I2GaA9wKTycZAjoEpZ.mp4"
