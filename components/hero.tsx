@@ -7,7 +7,7 @@ export function Hero() {
     <section className="relative min-h-screen flex flex-col justify-center px-6 md:px-12">
       <div className="max-w-7xl mx-auto w-full pt-24">
         <div className="flex flex-col gap-8">
-          <div className="flex flex-col sm:flex-row gap-4 order-1 sm:order-none">
+          <div className="flex flex-col sm:flex-row gap-4 order-2 sm:order-1">
             <a
               href="#contact"
               className="inline-flex items-center justify-center px-8 py-4 bg-foreground text-background font-medium text-sm uppercase tracking-widest hover:bg-accent hover:text-accent-foreground transition-colors"
