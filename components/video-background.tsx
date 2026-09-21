@@ -3,7 +3,7 @@
 import { useRef } from 'react'
 
 const BACKGROUND_VIDEO =
-  'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/20260921-2216-35.7361938-HlWfS5KBJfzI5Sofm0znveUMGqqumR.mp4'
+  'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/20260921-2217-49.3251505-EVNf7vk0vJDtToANwlPY1MmCTNAG6F.mp4'
 
 export function VideoBackground() {
   const videoRef = useRef<HTMLVideoElement>(null)
