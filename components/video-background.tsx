@@ -1,12 +1,31 @@
 "use client"
 
-import { AnimatedBackground } from './animated-background'
+import { useRef } from 'react'
+
+const BACKGROUND_VIDEO =
+  'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/20260921-2217-49.3251505-EVNf7vk0vJDtToANwlPY1MmCTNAG6F.mp4'
 
 export function VideoBackground() {
+  const videoRef = useRef<HTMLVideoElement>(null)
+
+  const stopAnimation = () => {
+    videoRef.current?.pause()
+  }
+
   return (
     <>
-      <AnimatedBackground />
-      {/* Subtle gradient overlay for depth */}
+      <video
+        ref={videoRef}
+        autoPlay
+        loop
+        muted
+        playsInline
+        onPointerDown={stopAnimation}
+        aria-hidden="true"
+        className="fixed inset-0 z-0 h-full w-full object-cover"
+      >
+        <source src={BACKGROUND_VIDEO} type="video/mp4" />
+      </video>
       <div className="fixed inset-0 z-0 pointer-events-none bg-gradient-to-b from-background/30 via-transparent to-background/50" />
     </>
   )
